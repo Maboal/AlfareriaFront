@@ -1,0 +1,46 @@
+<app-header></app-header>
+      <!-- inner page section -->
+      <section class="inner_page_head">
+        <div class="container_fuild">
+           <div class="row">
+              <div class="col-md-12">
+                 <div class="full">
+                    <h3>Nuestros Productos</h3>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- end inner page section -->
+     <section class="product_section layout_padding">
+        <div class="container">
+           <div class="heading_container heading_center" >
+           </div>
+           <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-4" *ngFor="let producto of productos">
+                 <div class="box">
+                    <div class="option_container">
+                       <div class="options">
+                          <a routerLink="/producto/{{producto.id}}" class="option2">
+                          Ver
+                          </a>
+                       </div>
+                    </div>
+                    <div class="img-box">
+                       <img src="{{producto.imagen_url}}" alt="">
+                    </div>
+                    <div class="detail-box">
+                       <h5>
+                        {{producto.nombre}}
+                       </h5>
+                       <h6>
+                        {{producto.precio}} €
+                       </h6>
+                    </div>
+                 </div>
+              </div>           
+            </div>
+
+        </div>
+     </section>
+<app-footer></app-footer>

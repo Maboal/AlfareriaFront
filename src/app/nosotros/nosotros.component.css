@@ -1,0 +1,140 @@
+h1, h2 {
+    font-family: 'Montserrat', serif;
+}
+
+h1 {
+    color: black !important;
+}
+
+body {
+    background-color: #ffffffe0;
+}
+
+.horizontal-video {
+    transform: rotate(90deg);
+    transform: translateX(600px);
+    object-fit: contain;
+    object-position: bottom;
+    width: 75%;
+    height: auto;
+}
+
+.hero-section {
+    color: black;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-section,
+.services-section,
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2,
+.services-section h2,
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.about-section,
+.services-section,
+.contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section h2,
+.services-section h2,
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+}
+
