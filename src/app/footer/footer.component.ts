@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
 export class FooterComponent {
 
   user: any = localStorage.getItem('username')
-  
+  // isAdmin: boolean = localStorage.getItem('isAdmin')
+
+  onInit(): void {
+
+  }
 
 }

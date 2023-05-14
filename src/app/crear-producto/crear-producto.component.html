@@ -18,19 +18,24 @@
        <div class="row">
           <div class="col-lg-8 offset-lg-2">
              <div class="full">
-                <form action="">
+               <form (ngSubmit)="onSubmit(formulario)" #formulario="ngForm">
                    <fieldset>
-                      <input type="text" placeholder="Nombre" name="nombre" required />
-                      <input type="text" placeholder="Descripcion" name="descripcion" required />
-                      <input type="text" placeholder="Precio" name="precio" required />
-                      <input type="number" placeholder="Stock" name="stock" required />
-                      <input type="text" placeholder="URL imagen" name="URL" required />
-                      <input type="text" placeholder="Categoria" name="Categoria" required />
-                      <input type="submit" value="Crear" />
+                     <input type="text" placeholder="Nombre" name="nombre" required [(ngModel)]="campos.nombre" />
+                     <input type="text" placeholder="Descripcion" name="descripcion" required [(ngModel)]="campos.descripcion" />
+                     <input type="text" placeholder="Precio" name="precio" required [(ngModel)]="campos.precio" />
+                     <input type="number" placeholder="Stock" name="stock" required [(ngModel)]="campos.stock" />
+                     <input type="text" placeholder="URL imagen" name="imagen_url" required [(ngModel)]="campos.imagen_url" />
+                     <input type="text" placeholder="Categoria" name="categoria" required [(ngModel)]="campos.categoria" />
+                     <input type="submit" value="Añadir Producto">
                    </fieldset>
+                   <div *ngIf="created" class="alert alert-success mt-3" role="alert">
+                     <button type="button" class="close" data-dismiss="alert">x</button>
+                     Producto creado correctamente
+                   </div>
                 </form>
              </div>
           </div>
+
        </div>
     </div>
  </section>
